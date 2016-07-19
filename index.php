@@ -31,22 +31,7 @@ function sendMessage ($chatId, $message) {
         file_get_contents($url);
        
 }
- 
- 
- 
- 
- 
 ?>
 
-/*
-$text = end($updateArray["result"])["message"]["text"];
 
-$id = end($updateArray["result"])["message"]["from"]["id"]; 
-
-print_r($text);
-
-#print_r($id);
-
-file_get_contents($website."/sendmessage?chat_id=".$id."&text=".$text)
-*/
 
