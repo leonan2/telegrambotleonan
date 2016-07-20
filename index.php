@@ -9,3 +9,5 @@ $updateArray = json_decode($update, TRUE);
 $chatId = $updateArray["result"][0]["message"]["chat"]["id"];
 
 print_r($text);
+
+?>
