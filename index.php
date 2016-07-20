@@ -9,9 +9,10 @@ $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
 
 $chatId = $update["message"]["chat"]["id"];
-$message = $update ["message"]["text"];
+$message = $update["message"]["text"];
 
 switch($message) {
+  
   case "/test":
     sendMessage($chatId, "text");
     break;
@@ -30,4 +31,4 @@ function sendMessage ($chatId, $message) {
 
 ?>
 
-<h2> Test </h2>
+<h2> Test feito </h2>
