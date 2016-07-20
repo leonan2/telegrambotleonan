@@ -32,7 +32,3 @@ function sendMessage ($chatId, $message) {
 }
  
  
- 
- 
- 
-?>
