@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '263074817:AAGLTJYhzahHybKzyUzFVFEuk8LpxkZkjqc');
+define('BOT_TOKEN', '262810724:AAELbOXZZext7xBrQoOXT7WJWdJQLUFwPjk');
 define('API_URL', 'https://telegram.me/andersonbotelho_bot'.BOT_TOKEN.'/');
 function apiRequestWebhook($method, $parameters) {
   if (!is_string($method)) {
