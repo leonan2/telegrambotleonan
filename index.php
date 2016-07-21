@@ -14,13 +14,13 @@ $message = $update["message"]["text"];
 switch($message) {
        
         case "/test":
-                $message = "test"
+                $message = "test";
                 break;
         case "/hi":
-                $message = "hi"
+                $message = "hi";
                 break;
         default:
-               $message = "default"
+               $message = "default";
        
 }
  
