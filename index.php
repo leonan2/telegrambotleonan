@@ -14,13 +14,13 @@ $message = $update["message"]["text"];
 switch($message) {
        
         case "/test":
-                sendMessage($chatId, "test");
+                $message = "test"
                 break;
         case "/hi":
-                sendMessage($chatId, "hi there!");
+                $message = "hi"
                 break;
         default:
-                sendMessage($chatId, "default");
+               $message = "default"
        
 }
  
