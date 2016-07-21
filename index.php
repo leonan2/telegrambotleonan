@@ -16,7 +16,8 @@ echo $response;
 //$chatId = $updateArray["result"][0]["message"]["chat"]["id"];
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
-$texto = strtolower ($update['message']['text']);
+$texto =  $update['message']['text'];
+$texto = strtolower($texto);
 $chatId = $update['message']['chat']['id'];
 if ($texto) {
   switch ($update['message']['text']) {
