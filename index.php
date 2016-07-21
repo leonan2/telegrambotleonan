@@ -23,13 +23,16 @@ if ($update) {
     case 'oi':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'Oi, tudo bem?'
-      ]);
-      $response = $telegram->sendMessage([
-        'chat_id' => $chatId,
-        'text' => 'qr tc?'
+        'text' => 'Oi, tudo bem? / (responda com tudo e você?)'
       ]);
       break;
+    case 'tudo e você?'
+     $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'to bem, o que está fazendo?'
+      ]);
+      break;
+    
     default:
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
