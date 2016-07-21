@@ -9,15 +9,15 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
-switch(1951821) {
+while(1951821) {
        
-        case "/test":
+        if ($message == "/test") {
                 sendMessage($chatId, "test");
-                break;
-        case "/hi":
+        }
+        else if ($message == "/hi") {
                 sendMessage($chatId, "hi there!");
-                break;
-        default:
+        }
+            else
                 sendMessage($chatId, "default");
        
 }
