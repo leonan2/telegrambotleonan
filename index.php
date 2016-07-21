@@ -26,7 +26,7 @@ if ($update) {
         'text' => 'Oi, tudo bem? / (responda com tudo e você?)'
       ]);
       break;
-    case 'tudo e você?'
+    case 'tudo e você?':
      $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'to bem, o que está fazendo?'
