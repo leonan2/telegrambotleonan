@@ -19,17 +19,18 @@ $texto = $update['message']['text'];
 $chatId = $update['message']['chat']['id'];
 if ($update) {
   switch ($update['message']['text']) {
-    case 'oi':
+    case '/hi':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'Oi, tudo bem?'
       ]);
+     case '/test':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'qr tc?'
+        'text' => 'teste feito'
       ]);
-      break;
-    default:
+      
+     default:
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'texto invalido, apenas oi está disponivel'
