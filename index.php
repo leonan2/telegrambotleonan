@@ -12,15 +12,20 @@ $message = $update["message"]["text"];
 switch($message) {
        
         case "/test":
-                $texto = "teste";
+                sendMessage($chatId, "test");
                 break;
         case "/hi":
-                $texto = "hi";
+                sendMessage($chatId, "hi there!");
                 break;
         default:
-                $texto = "default";
+                sendMessage($chatId, "default");
        
 }
 
-file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=$texto");
-
+function sendMessage ($chatId, $message) {
+       
+        $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".urlencode($message);
+        file_get_contents($url);
+       
+}
+ 
