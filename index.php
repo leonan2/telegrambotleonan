@@ -9,7 +9,7 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
-switch($message) {
+switch(1951821) {
        
         case "/test":
                 sendMessage($chatId, "test");
