@@ -12,19 +12,19 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
-while(1951821) {
+switch($message) {
        
-        if ($message == "/test") {
+        case "/test":
                 sendMessage($chatId, "test");
-        }
-        else if ($message == "/hi") {
+                break;
+        case "/hi":
                 sendMessage($chatId, "hi there!");
-        }
-            else
+                break;
+        default:
                 sendMessage($chatId, "default");
        
 }
-
+ 
 function sendMessage ($chatId, $message) {
        
         $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".urlencode($message);
