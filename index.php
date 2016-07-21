@@ -25,7 +25,7 @@ $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
  
  
-/*switch($message) {
+switch($message) {
        
         case "/test":
                
@@ -36,15 +36,7 @@ $message = $update["message"]["text"];
         default:
                 sendMessage($chatId, "default");
        
-}*/
-
-if ($message == "/test") {
-   sendMessage($chatId, "test");
 }
-else {
-   sendMessage($chatId, "hi there!");
-}
-
  
 function sendMessage ($chatId, $message) {
        
