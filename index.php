@@ -20,7 +20,7 @@ $texto =  $update['message']['text'];
 $texto = strtolower($texto);
 $chatId = $update['message']['chat']['id'];
 if ($texto) {
-  switch ($update['message']['text']) {
+  switch ($texto) {
     case 'oi':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
