@@ -34,13 +34,9 @@ if ($texto) {
       ]);
       break;
     case 'nada':
-     $response = $telegram->sendMessage([
+      $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'to bem, o que está fazendo?'
-      ]);
-       $response = $telegram->sendMessage([
-        'chat_id' => $chatId,
-        'text' => 'obrigado pela sua conversa,fiquei feliz!'
+        'text' => 'ah sim,obrigado pela sua conversa,fiquei feliz!'
       ]);
       break;
     
