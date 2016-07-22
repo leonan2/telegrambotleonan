@@ -30,13 +30,13 @@ if ($texto) {
     case 'tudo e você?':
      $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'to bem, o que está fazendo? responda com nada'
+        'text' => 'to bem, o que está fazendo? (responda com nada)'
       ]);
       break;
     case 'nada':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'ah sim,obrigado pela sua conversa,fiquei feliz!'
+        'text' => 'ah sim, obrigado pela sua conversa, fiquei feliz!'
       ]);
       break;
     
@@ -44,7 +44,7 @@ if ($texto) {
     default:
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'texto invalido, apenas oi está disponivel'
+        'text' => 'texto invalido.'
       ]);
       
       break;
