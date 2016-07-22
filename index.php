@@ -44,12 +44,28 @@ if ($texto) {
     case 'nada':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
-        'text' => 'ah sim, obrigado pela sua conversa, fiquei feliz!'
+        'text' => 'ah sim, só estou conversando com você. Está carente? '
       ]);
       break;
-    
-    
-    default:
+    case 'sim':
+      $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'entendo, também estou. Foi boa a conversa, tchau.'
+      ]);
+      break;
+      case 'não':
+      $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'entendo, eu estou. Foi boa a conversa, tchau. '
+      ]);
+      break;
+      case 'tchau':
+      $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'bye!'
+      ]);
+      break;
+     default:
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'texto invalido.'
