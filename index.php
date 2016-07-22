@@ -26,6 +26,12 @@ if ($texto) {
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'Oi, tudo bem? / (responda com tudo e você?)'
+        $keyboard = [
+                    ['7', '8', '9'],
+                    ['4', '5', '6'],
+                    ['1', '2', '3'],
+                         ['0']
+        ];
        ]);
       break;
     case 'oi':
