@@ -21,7 +21,13 @@ $texto = strtolower($texto);
 $chatId = $update['message']['chat']['id'];
 if ($texto) {
   switch ($texto) {
-    case 'oi' || '/start' :
+    case '/start':
+      $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'Oi, tudo bem? / (responda com tudo e você?)'
+      ]);
+      break;
+    case 'oi':
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
         'text' => 'Oi, tudo bem? / (responda com tudo e você?)'
