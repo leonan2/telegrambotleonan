@@ -70,6 +70,12 @@ if ($texto) {
         'text' => 'olha quem fala, a pessoa que está aqui conversando com um robô'
       ]);
       break;
+       case 'oi idiota':
+      $response = $telegram->sendMessage([
+        'chat_id' => $chatId,
+        'text' => 'Oi trouxa.'
+      ]);
+      break;
      default:
       $response = $telegram->sendMessage([
         'chat_id' => $chatId,
